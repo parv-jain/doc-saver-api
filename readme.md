@@ -15,5 +15,8 @@ Document Saver - Save your documents and easily manage them in your dashboard.
 ## Official Documentation
 Documentation for the api can be found on [here](https://documenter.getpostman.com/view/2358344/RznHJdPY).
 
-## Screenshots
-View screenshots at `public/screenshots/`
+## API Screenshots (Postman)
+View screenshots at `public/postman-screenshots/`
+
+## DB Screenshots (MySQL)
+View screenshots at `public/db-screenshots/`
