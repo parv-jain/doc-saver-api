@@ -12,7 +12,7 @@ class UserController extends Controller
         $decodedRequest = json_decode(base64_decode($request->header('apiToken')), true);
         $email = $decodedRequest['email'];
         $password = $decodedRequest['password'];
-        return response()->json(User::with(['documents'])->where('email', $email)->where('password', $password)->get());
+        return response()->json(User::with(['documents'])->where('email', $email)->where('password', $password)->first());
     }
 
     public function addNewUser(Request $request)
