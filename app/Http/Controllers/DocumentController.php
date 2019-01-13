@@ -17,7 +17,7 @@ class DocumentController extends Controller
         $this->validate($request, [
             'user_id' => 'required|integer|exists:users,id',
             'document' => 'required|max:10240|mimes:pdf',
-            'document_info' => 'required|unique:users'
+            'document_info' => 'required'
         ]);
 
         $fileName = $request->file('document')->getClientOriginalName();
@@ -29,6 +29,6 @@ class DocumentController extends Controller
         $request->merge([ 'document_url' => '/public/' . $path . $fileName ]);
         $document = Document::create($request->all());
         
-        return response()->json($user, 201);
+        return response()->json($document, 201);
     }
 }

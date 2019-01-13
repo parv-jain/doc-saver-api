@@ -37,7 +37,7 @@ class AuthServiceProvider extends ServiceProvider
                 $password = $decodedRequest['password'];
                 $user = User::where('email', $email)->where('password', $password)->first();
                 if($user == null) return null;
-                if($request->input('user_id') && json_decode($user, true)['user_id'] != $request->input('user_id')) return null;
+                if($request->input('user_id') && json_decode($user, true)['id'] != $request->input('user_id')) return null;
                 return $user;
             }
             else return null;

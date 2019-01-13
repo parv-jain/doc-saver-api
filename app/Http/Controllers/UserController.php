@@ -18,6 +18,7 @@ class UserController extends Controller
     public function addNewUser(Request $request)
     {
         $this->validate($request, [
+            'name' => 'required',
             'email' => 'required|unique:users',
             'password' => 'required'
         ]);
