@@ -1,21 +1,18 @@
-# Lumen PHP Framework
+# Document Saver (DocSaver) REST API
+DocSaver REST(Representational State Transfer) API to share docsaver backend business logic with front end components.
+Document Saver - Save your documents and easily manage them in your dashboard.
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+## Deploy on local machine
+###### Change directory to doc-saver-api `cd doc-saver-api`
+###### Copy .env.example to .env `cp .env.example .env`
+###### Set up DB username, password, hostname and db name in `.env` file
+###### Run `php composer install` to install package dependencies
+###### Run `php artisan migrate` to migrate database to your local db
+###### Run command `php -S localhost:8000 -t public` to serve api on port 8000
+###### API serve on `localhost:8000`
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
 ## Official Documentation
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+Documentation for the api can be found on [here](https://documenter.getpostman.com/view/2358344/RznHJdK9).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)

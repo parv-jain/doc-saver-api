@@ -1,7 +1,7 @@
 {
-    "name": "laravel/lumen",
-    "description": "The Laravel Lumen Framework.",
-    "keywords": ["framework", "laravel", "lumen"],
+    "name": "Document Saver REST API",
+    "description": "Document Saver - Save your documents and easily manage them in your dashboard.",
+    "keywords": ["rest", "framework", "laravel", "lumen"],
     "license": "MIT",
     "type": "project",
     "require": {
