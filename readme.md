@@ -5,7 +5,7 @@ Document Saver - Save your documents and easily manage them in your dashboard.
 ## Deploy on local machine
 ###### Change directory to doc-saver-api `cd doc-saver-api`
 ###### Copy .env.example to .env `cp .env.example .env`
-###### Set up DB username, password, hostname and db name in `.env` file
+###### Set up DB username, password, hostname and db name along with baseurl of api in `.env` file
 ###### Run `php composer install` to install package dependencies
 ###### Run `php artisan migrate` to migrate database to your local db
 ###### Run command `php -S localhost:8000 -t public` to serve api on port 8000

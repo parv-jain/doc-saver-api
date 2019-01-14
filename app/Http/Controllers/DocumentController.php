@@ -26,7 +26,7 @@ class DocumentController extends Controller
         $path = 'files' . DIRECTORY_SEPARATOR . $request['user_id'] . DIRECTORY_SEPARATOR;
         $destinationPath = base_path('public') . DIRECTORY_SEPARATOR . $path;
         $request->file('document')->move($destinationPath, $fileName);
-        $request->merge([ 'document_url' => '/public/' . $path . $fileName ]);
+        $request->merge([ 'document_url' => env('BASEURL').'/public/' . $path . $fileName ]);
         $document = Document::create($request->all());
         
         return response()->json($document, 201);
