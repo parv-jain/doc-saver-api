@@ -8,7 +8,7 @@ Document Saver - Save your documents and easily manage them in your dashboard.
 ###### Set up DB username, password, hostname and db name along with baseurl of api in `.env` file
 ###### Run `php composer install` to install package dependencies
 ###### Run `php artisan migrate` to migrate database to your local db
-###### Run command `php -S localhost:8000 -t public` to serve api on port 8000
+###### Run command `php -S localhost:8000` to serve api on port 8000
 ###### API serve on `localhost:8000`
 
 
